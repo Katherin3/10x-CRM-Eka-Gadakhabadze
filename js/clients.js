@@ -251,7 +251,7 @@ async function handleDelete(clientId) {
 function openAddModal() {
   const overlay = document.getElementById('add-modal');
   const form = document.getElementById('add-form');
-  form.reset();
+  form.reset(); // reset the form to clear previous values
   clearFieldErrors(form);
   overlay.classList.add('open');
 }
